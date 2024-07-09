@@ -1,0 +1,85 @@
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../images/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.hero {
+    margin-top: 170px;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.tools > div {
+    background-color: black;
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+.experience-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.experience-container .title {
+    margin-bottom: 3rem;
+}
+
+.experience {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(5, 5, 5);
+    padding: 150px 0;
+}
+
+.experience-box {
+    padding: 2rem;
+    border-left: 4px solid #333; /* Dark initial border color */
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.experience-box:hover {
+    border-left-color: #6cc8c8; /* Light blue border color on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover for depth */
+}
+
+
+
+
+/* Tablet media query (typically 768px and up) */
+@media (min-width: 768px) {
+    .hero {
+        margin-top: 220px;
+    }
+    .hero-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tools > div {
+        margin: 0 auto;
+    }
+}
